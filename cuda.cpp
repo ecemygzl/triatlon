@@ -9,8 +9,10 @@ __global__ void hesaplaKonumVeHiz(float *hizlar, float *konumlar, int sporcuSayi
     int idx = blockIdx.x * blockDim.x + threadIdx.x; // Thread indeksi hesaplanır
 
     // Sporcuların hızlarının ve konumlarının güncellenmesi
-    if (idx < sporcuSayisi) {
-        if (parkur == 1) {
+    if (idx < sporcuSayisi) 
+    {
+        if (parkur == 1) 
+        {
             // İlk parkur
             hizlar[idx] = 1 + static_cast<float>(rand()) / static_cast<float>(RAND_MAX/(5-1)); // Rastgele hız belirleme
             konumlar[idx] += hizlar[idx]; // Konum güncelleme
@@ -26,7 +28,8 @@ __global__ void hesaplaKonumVeHiz(float *hizlar, float *konumlar, int sporcuSayi
     }
 }
 
-int main() {
+int main() 
+{
     int sporcuSayisi = 300; // Toplam sporcu sayısı
     int parkur = 1; // Başlangıçta birinci parkur
 
