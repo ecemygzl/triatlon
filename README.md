@@ -3,3 +3,14 @@ Bu proje, triatlon yarışını simüle eden bir C++ programıdır. Yüzme, bisi
 
 Kurulum
 Projeyi klonlayın:
+git clone https://github.com/kullanici_adi/triatlon-yarisi-simulasyonu.git
+
+Kullanım
+Proje klasörüne gidin:
+cd triatlon-yarisi-simulasyonu
+
+Kodları derleyin:
+g++ main.cpp -o triatlon
+
+Oluşturulan programı çalıştırın:
+./triatlon
